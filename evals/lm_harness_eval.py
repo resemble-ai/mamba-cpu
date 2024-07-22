@@ -3,7 +3,7 @@ import torch
 import transformers
 from transformers import AutoTokenizer
 
-from mamba_ssm.models.mixer_seq_simple import MambaLMHeadModel
+from mamba_cpu.models.mixer_seq_simple import MambaLMHeadModel
 
 from lm_eval.api.model import LM
 from lm_eval.models.huggingface import HFLM

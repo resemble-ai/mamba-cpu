@@ -6,7 +6,7 @@ from torch.cuda.amp import custom_bwd, custom_fwd
 
 from einops import rearrange, repeat
 
-from mamba_ssm.ops.causal_conv import causal_conv1d_fn
+from mamba_cpu.ops.causal_conv import causal_conv1d_fn
 #import causal_conv1d_cuda
 #import selective_scan_cuda
 

@@ -8,8 +8,8 @@ import pytest
 
 from einops import rearrange
 
-from mamba_ssm.ops.selective_scan_interface import selective_scan_fn, selective_scan_ref
-from mamba_ssm.ops.selective_scan_interface import mamba_inner_fn, mamba_inner_ref
+from mamba_cpu.ops.selective_scan_interface import selective_scan_fn, selective_scan_ref
+from mamba_cpu.ops.selective_scan_interface import mamba_inner_fn, mamba_inner_ref
 
 
 # @pytest.mark.parametrize('wtype', [torch.float32, torch.complex64])

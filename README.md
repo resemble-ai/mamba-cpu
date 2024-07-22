@@ -36,13 +36,13 @@ We expose several levels of interface with the Mamba model.
 
 Mamba is based on a selective SSM layer, which is the focus of the paper (Section 3; Algorithm 2).
 
-Source: [ops/selective_scan_interface.py](mamba_ssm/ops/selective_scan_interface.py).
+Source: [ops/selective_scan_interface.py](mamba_cpu/ops/selective_scan_interface.py).
 
 ### Mamba Block
 
 The main module of this repository is the Mamba architecture block wrapping the selective SSM.
 
-Source: [modules/mamba_simple.py](mamba_ssm/modules/mamba_simple.py).
+Source: [modules/mamba_simple.py](mamba_cpu/modules/mamba_simple.py).
 
 Usage:
 ```
@@ -65,7 +65,7 @@ assert y.shape == x.shape
 
 Finally, we provide an example of a complete language model: a deep sequence model backbone (with repeating Mamba blocks) + language model head.
 
-Source: [models/mixer_seq_simple.py](mamba_ssm/models/mixer_seq_simple.py).
+Source: [models/mixer_seq_simple.py](mamba_cpu/models/mixer_seq_simple.py).
 
 This is an example of how to integrate Mamba into an end-to-end neural network.
 This example is used in the generation scripts below.
