@@ -270,5 +270,6 @@ setup(
         "ninja",
         "einops",
         "transformers",
+        "causal-conv1d>=1.1.0"
     ],
 )
